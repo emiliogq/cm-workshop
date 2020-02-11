@@ -1,0 +1,3 @@
+[submodule "uml/ieec-plantuml-skinparam"]
+	path = uml/ieec-plantuml-skinparam
+	url = ../ieec-plantuml-skinparam/
