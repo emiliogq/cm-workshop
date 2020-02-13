@@ -10,6 +10,7 @@ variables:
 build-job:
   stage: build
   script:
+    - export IEECTEXSLIDES_PATH=$PWD/ieectexslides/
     - make
   artifacts:
     paths:

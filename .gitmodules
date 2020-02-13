@@ -1,3 +1,6 @@
 [submodule "uml/ieec-plantuml-skinparam"]
 	path = uml/ieec-plantuml-skinparam
 	url = ../ieec-plantuml-skinparam/
+[submodule "ieectexslides"]
+	path = ieectexslides
+	url = ../../emiliogq/ieectexslides
