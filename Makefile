@@ -1,4 +1,4 @@
-$(eval export TEXINPUTS=$(IEECTEX_PATH)//:$(TMP_TEXINPUTS))
+$(eval export TEXINPUTS=$(IEECTEXSLIDES_PATH)//:$(TMP_TEXINPUTS))
 OUT_DIR=build
 FIG_DIR=fig
 UML_DIR=uml
