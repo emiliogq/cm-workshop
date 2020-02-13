@@ -2,7 +2,7 @@ $(eval export TEXINPUTS=$(IEECTEX_PATH)//:$(TMP_TEXINPUTS))
 OUT_DIR=build
 FIG_DIR=fig
 UML_DIR=uml
-OUTPUTFILE=git-workflow
+OUTPUTFILE=git-workshop
 DATE=20200313
 INPUTFILE=main
 todo: $(INPUTFILE).tex
