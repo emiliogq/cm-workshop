@@ -1,0 +1,40 @@
+@startuml
+!include ieec-plantuml-skinparam/style.uml
+left to right direction
+() "C1" as c1
+() "C2" as c2
+() "C3" as c3
+() "C5" as c5
+() "C6" as c6
+() "C4" as c4
+() "C7" as c7
+() "C8" as c8
+() "C9" as c9
+() "C10" as c10
+
+
+c1 -- c2 
+
+'master branch'
+c2 -- c3
+c3 -- c5
+c5 -- c6
+c6 -- c10
+
+'feature-1'
+c2 -- c4
+c4 -- c7
+c7 -- c6
+
+'feature-2'
+c2 -- c8
+c8 -- c9
+c9 -- c10
+note top of c6 : HEAD
+note top of c6 : 1.0
+note right of c10 : master
+note right of c7 : feature-1
+note right of c9 : feature-2
+
+
+@enduml

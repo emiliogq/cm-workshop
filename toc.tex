@@ -12,3 +12,10 @@
 \tableofcontents[currentsection]
 \end{frame}
 }
+
+\AtBeginSubsection[]
+{
+    \begin{frame}{Table of Contents}
+        \tableofcontents[currentsection,currentsubsection]
+    \end{frame}
+}

@@ -12,5 +12,7 @@ c1 -- c2
 
 note top of c2 : HEAD
 note right of c2 : master
+note right of c2 : feature-1
+
 
 @enduml
