@@ -2,13 +2,15 @@
 
 \frametitle{Git: Modules}
 
-\begin{figure}
-\centering
-\includegraphics[scale=0.25]{modules.png}
-\caption{Module problem}
-\label{fig:tagging-1}
+\begin{block}{Problem}
+Thirdty-party dependencies such as external libraries are needed by your project. The version management of those, is not straightforward.
+\end{alertblock}
 
-\end{figure}
+\pause
+
+\begin{block}{Solution}
+Link the library repository to our repository so that you could update the library dependency easily.
+\end{block}
 
 \end{frame}
 
@@ -18,7 +20,13 @@
 
 \begin{lstlisting}[language=Bash]
 # Relative path to repo
+# https://gitlab.ice.csic.es/emiliogq/git-worshop/
+# https://gitlab.ice.csic.es/ieec/labs
 git submodule add ../ieec/labs
+
+# Will update all submodules to the latest version. 
+# A commit on your repo shall be required.
+git submodule update --remote
 \end{lstlisting}
 
 
