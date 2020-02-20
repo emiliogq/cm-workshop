@@ -10,17 +10,17 @@ left to right direction
 () "C7" as c7
 
 
-c1 -- c2 
+c1 <-- c2 
 
 'master branch'
-c2 -- c3
-c3 -- c5
-c5 -- c6
+c2 <-- c3
+c3 <-- c5
+c5 <-- c6
 
 'feature-1'
-c2 -- c4
-c4 -- c7
-c7 -- c6
+c2 <-- c4
+c4 <-- c7
+c7 <-- c6
 
 note top of c6 : HEAD
 note right of c6 : master

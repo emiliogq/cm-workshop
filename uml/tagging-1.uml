@@ -13,23 +13,24 @@ left to right direction
 () "C10" as c10
 
 
-c1 -- c2 
+c1 <-- c2 
 
 'master branch'
-c2 -- c3
-c3 -- c5
-c5 -- c6
-c6 -- c10
+c2 <-- c3
+c3 <-- c5
+c5 <-- c6
+c6 <-- c10
 
 'feature-1'
-c2 -- c4
-c4 -- c7
-c7 -- c6
+c2 <-- c4
+c4 <-- c7
+c7 <-- c6
 
 'feature-2'
-c2 -- c8
-c8 -- c9
-c9 -- c10
+c2 <-- c8
+c8 <-- c9
+c9 <-- c10
+
 note top of c10 : HEAD
 note right of c10 : master
 note right of c7 : feature-1

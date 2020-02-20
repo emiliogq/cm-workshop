@@ -1,5 +1,22 @@
 @startuml
 !include ieec-plantuml-skinparam/style.uml
+top to bottom direction
+package "Your software" {
 
-[ Your software ]
+[Component 1]
+[Component 2]
+[Component 3]
+
+}
+
+package "Thirty-party software" {
+() "Interface" as i
+[Component 4] -l- i
+[Component 5] -r- i
+[Component 6] -d- i
+i -l- [Component 1]
+i -l- [Component 2]
+i -l- [Component 3]
+
+}
 @enduml

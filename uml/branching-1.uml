@@ -7,7 +7,7 @@ left to right direction
 
 
 'master branch'
-c1 -- c2 
+c1 <-- c2 
 
 
 note top of c2 : HEAD
