@@ -1,6 +1,11 @@
 \begin{frame}[fragile]
 
 \frametitle{Git: Version Merging}
+
+\begin{block}{Merging}
+Version merging allows us to combine several changes of file(s)
+\end{block}
+
 \begin{multicols}{2}
 
 \begin{lstlisting}[language=Bash]
@@ -11,7 +16,7 @@ git merge feature-1
 \centering
 \includegraphics<1>[scale=0.25]{branching-3.png}
 \includegraphics<2>[scale=0.25]{merging-1.png}
-\includegraphics<3>[scale=0.25]{merging-2.png}
+\includegraphics<3->[scale=0.25]{merging-2.png}
 \caption{Merging example}
 \label{fig:merging-1}
 
@@ -19,4 +24,26 @@ git merge feature-1
 
 \end{multicols}
 
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Git: Version Merging}
+
+Demostration:
+
+\begin{itemize}[<+(1)->]
+\item git init
+\item echo "This is a merge conflict test." \textgreater demo.txt
+\item git add demo.txt
+\item git commit -m "Initial commit"
+\item git branch merge-conflict-test
+\item echo "This is another merge conflict test." \textgreater\textgreater demo.txt
+\item git commit -am "Second change"
+\item git checkout merge-conflict-test
+\item echo "This is the real merge conflict test." \textgreater\textgreater demo.txt
+\item git commit -am "The real change."
+\item git checkout master
+\item git merge merge-conflict-test
+\end{itemize}
 \end{frame}
