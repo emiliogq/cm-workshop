@@ -8,10 +8,40 @@ Branching allows us to have several versions of file(s) at the same time.
 
 \begin{multicols}{2}
 
+
+\begin{onlyenv}<1>
+
+Create feature-1 branch:
 \begin{lstlisting}[language=Bash]
 git branch feature-1
+\end{lstlisting}
+
+\end{onlyenv}
+
+\begin{onlyenv}<2>
+
+Switch to feature-1 branch:
+
+\begin{lstlisting}[language=Bash]
 git checkout feature-1
 \end{lstlisting}
+
+\end{onlyenv}
+
+\begin{onlyenv}<3>
+
+Make several changes:
+
+\begin{lstlisting}[language=Bash]
+git add file1
+git commit -m 
+"Fourth commit."
+
+git add file2 file3
+git commit -m "Fifth commit."
+\end{lstlisting}
+
+\end{onlyenv}
 
 \begin{figure}
 \centering
