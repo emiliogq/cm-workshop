@@ -2,6 +2,12 @@
 
 \frametitle{Git: Work Rearrangement}
 
+\begin{block}{Rebasing}
+Git Rebasing allows us to change the base of a branch (from its starts) to another point.
+\end{block}
+
+\uncover<3>{\textbf{Rule of thumb}: \textbf{Never} rebase anything you’ve pushed somewhere.}
+
 \begin{lstlisting}[language=Bash]
 git rebase master
 git rebase master feature-1
@@ -10,11 +16,12 @@ git rebase master feature-1
 \begin{figure}
 \centering
 \includegraphics<1>[scale=0.25]{branching-3.png}
-\includegraphics<2>[scale=0.25]{rebasing-1.png}
+\includegraphics<2->[scale=0.25]{rebasing-1.png}
 \caption{Rebasing example}
 \label{fig:rebasing-1}
 
 \end{figure}
+
 
 
 \end{frame}
