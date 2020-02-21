@@ -1,30 +1,29 @@
-\begin{frame}[fragile]
+\begin{frame}
 
-\frametitle{Introduction: Git}
+\frametitle{Git: Workflow}
 
 \begin{multicols}{2}
 Git has three main states that your files can reside in:
 
-\begin{itemize}[<+->]
+\begin{itemize}[<+(1)->]
 \item \textbf{Modified}
 \item \textbf{Staged}
 \item \textbf{Committed}
 \end{itemize}
 
-\begin{lstlisting}[language=Bash]
-git add file-1
+\columnbreak
 
-git add file-2
+git add file1 file2 dir1 dir2
 
-git commit
-\end{lstlisting}
+git commit -m "Fancy feature done."
+
 
 \end{multicols}
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.2]{git-areas.png}
-
+\includegraphics[scale=0.25]{git-lifecycle-file.png}
+\caption{File lifecycle. From \href{https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository}{Git SCM}}
 \end{figure}
 
 \end{frame}
