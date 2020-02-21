@@ -2,14 +2,45 @@
 
 \frametitle{Git: Modules}
 
+\begin{block}{Mono project metodology}
+Mono-project metodology consists of keeping all components in one repository.
+\end{block}
+
+\begin{block}{Multi project metodology}
+Multi-project metodology consists of creating a project for each component
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Git: Modules}
+
+\begin{figure}
+\centering
+\includegraphics<1>[scale=0.3]{mono-project-metodology.png}
+\includegraphics<2>[scale=0.3]{multi-project-metodology.png}
+\caption{\only<1>{Mono project metodology example} \only<2>{Multi project metodology example}}
+\label{fig:mono-multi-project-metodologies}
+\end{figure}
+
+
+\end{frame}
+
+
+\begin{frame}
+
+\frametitle{Git: Modules}
+
+
 \begin{block}{Problem}
-Thirdty-party dependencies such as external libraries are needed by your project. The version management of those, is not straightforward.
+In multi project metodology, project dependencies (own or external) are needed by your project. The version management of those, is not straightforward.
 \end{block}
 
 \pause
 
 \begin{block}{Solution}
-Link the library repository to our repository so that you could update the library dependency easily.
+Link the dependent repository to our repository so that you could update the library dependency easily.
 \end{block}
 
 \end{frame}
