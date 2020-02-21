@@ -1,0 +1,18 @@
+\begin{frame}[fragile]
+
+\frametitle{Git: Undoing changes}
+
+\begin{lstlisting}[language=Bash]
+git checkout -- path/to/file
+git reset [--mixed] HEAD~N
+git revert commit-sha
+\end{lstlisting}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.25]{git-lifecycle-file.png}
+\caption{File lifecycle. From \href{https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository}{Git SCM}}
+\end{figure}
+
+\end{frame}

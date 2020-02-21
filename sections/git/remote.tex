@@ -1,0 +1,56 @@
+\begin{frame}[fragile]
+
+\frametitle{Git: Working with remote}
+
+\begin{block}{Remote}
+Remote repositories are versions of your project that are hosted on the Internet or network somewhere. Collaborating with others involves managing these remote repositories and \textbf{pushing and pulling data} to and from them when you need to share work
+\end{block}
+
+\pause
+
+Add a remote:
+\begin{lstlisting}[language=Bash]
+git remote add <remote_name> <remote_url>
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\frametitle{Git: Working with remote}
+
+Pushing data:
+
+\begin{lstlisting}[language=Bash]
+git push <remote_name> <branch_name>
+\end{lstlisting}
+
+\begin{figure}
+\includegraphics<1>[scale=0.3]{pushing-1.png}
+\includegraphics<2>[scale=0.3]{pushing-2.png}
+\caption{Pushing changes}
+\label{fig:pushing-changes}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\frametitle{Git: Working with remote}
+
+
+Pulling data:
+
+\begin{lstlisting}[language=Bash]
+git fetch <remote_name> <branch_name>
+git pull <remote_name> <branch_name>
+\end{lstlisting}
+
+\begin{figure}
+\includegraphics<1>[scale=0.3]{pulling-1.png}
+\includegraphics<2>[scale=0.3]{pulling-2.png}
+\caption{Pulling changes}
+\label{fig:pulling-changes}
+\end{figure}
+
+\end{frame}

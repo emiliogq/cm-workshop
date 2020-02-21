@@ -1,0 +1,46 @@
+@startuml
+!include ieec-plantuml-skinparam/style.uml
+left to right direction
+
+node origin {
+
+() "C1" as c1
+() "C2" as c2
+() "C3" as c3
+() "C4" as c4
+
+'origin/master branch'
+c1 <-- c2 
+c2 <-- c3
+c3 <-- c4
+
+note right of c4 : origin/master
+
+}
+
+node "local" {
+
+() "C1" as c11
+() "C2" as c12
+() "C3" as c13
+() "C4" as c14
+
+() "C5" as c5
+() "C6" as c6
+() "C7" as c7
+
+'master branch'
+c11 <-- c12 
+c12 <-- c13
+c13 <-- c14
+c14 <-- c5
+c5 <-- c6
+c6 <-- c7
+
+note right of c7 : HEAD
+note right of c7 : master
+
+}
+
+
+@enduml
