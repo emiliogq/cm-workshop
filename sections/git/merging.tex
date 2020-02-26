@@ -13,6 +13,7 @@ git merge feature-1
 \end{lstlisting}
 
 \begin{figure}
+
 \centering
 \includegraphics<1>[scale=0.25]{branching-3.png}
 \includegraphics<2>[scale=0.25]{merging-1.png}
@@ -30,9 +31,38 @@ git merge feature-1
 
 \frametitle{Git: Version Merging}
 
+\begin{block}{Merge conflict}
+Merge conflict occurs when you merge two branches and the same line(s) of a file(s) is modified in both
+\end{block}
+
+\pause
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.25]{merging-1.png}
+\caption{Merge conflict example}
+\end{figure}
+
+There are \sout{three} four possible solutions:
+
+\begin{itemize}[<+(1)->]
+
+\item Keep \textbf{ours} file version: git checkout --ours file
+\item Keep \textbf{theirs} file version: git checkout --theirs file
+\item Solve the conflict manually with a file editor
+\item Do nothing: git merge --abort
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Git: Version Merging}
+
 Demostration:
 
 \begin{itemize}[<+(1)->]
+
 \item git init
 \item echo "This is a merge conflict test." \textgreater demo.txt
 \item git add demo.txt
@@ -45,5 +75,7 @@ Demostration:
 \item git commit -am "The real change."
 \item git checkout master
 \item git merge merge-conflict-test
+
 \end{itemize}
+
 \end{frame}
