@@ -2,8 +2,8 @@ $(eval export TEXINPUTS=$(IEECTEXSLIDES_PATH)//:$(TMP_TEXINPUTS))
 OUT_DIR=build
 FIG_DIR=fig
 UML_DIR=uml
-OUTPUTFILE=git-workshop
-DATE=20200313
+OUTPUTFILE=configuration-management-workshop
+DATE=20200320
 INPUTFILE=main
 todo: $(INPUTFILE).tex
 	mkdir -p $(OUT_DIR) $(FIG_DIR) $(UML_DIR)
